@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
     { name: 'Home', href: '/'},
     { name: 'Academic History', href: 'academic'},
-    { name: 'Experiences', href: '#'},
+    { name: 'Experiences', href: 'experiences'},
     { name: 'Contact', href: '#'},
 ]
   
@@ -46,7 +46,7 @@ export default function Navbar(){
                                 key={item.name}
                                 href={item.href}
                                 className={classNames(
-                                'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                'text-gray-300 hover:text-white',
                                 'rounded-md px-3 py-2 text-sm font-medium'
                                 )}
                             >
@@ -67,10 +67,9 @@ export default function Navbar(){
                     as="a"
                     href={item.href}
                     className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'text-gray-300 hover:text-white',
                         'block rounded-md px-3 py-2 text-base font-medium'
                     )}
-                    aria-current={item.current ? 'page' : undefined}
                     >
                     {item.name}
                     </Disclosure.Button>

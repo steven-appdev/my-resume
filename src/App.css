@@ -87,3 +87,22 @@ footer p{
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
+.rectangle{
+  display: inline-block;
+  width: auto;
+  height: 25px;
+  background: black;
+  border-radius: 20px;
+}
+
+.inner-rectangle{
+  height: 25px;
+  background: green;
+  border-radius: 20px;
+}
+
+.language-logo{
+  width: 100px;
+  height: 100px;
+}

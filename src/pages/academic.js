@@ -6,10 +6,10 @@ const history = [
 
 export default function Academic(){
     return(
-        <div className="flex flex-col h-screen">
-            <div className='flex flex-1 justify-center items-center main'>
+        <div className="flex flex-col h-screen pt-10">
+            <div className='flex flex-1 justify-center main'>
                 <div className='flex flex-col academic'>
-                    <h1 className="animate__animated animate__fadeIn academic-title">here are my Academic History.</h1>
+                    <h1 className="animate__animated animate__fadeIn academic-title pb-10">here are my Academic History.</h1>
                     {history.map((item) => (
                         <div className="animate__animated animate__flipInX academic-entry">
                             <h2>{item.title}</h2>
