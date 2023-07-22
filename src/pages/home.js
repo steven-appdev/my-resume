@@ -1,8 +1,8 @@
 import portrait from '../img/cvPhoto.png';
 
-function Home() {
+export default function Home() {
     return (
-        <div className='animate__animated animate__fadeInDown flex flex-col h-screen'>
+        <div className='animate__animated animate__fadeIn flex flex-col h-screen z-0'>
             <div className='flex flex-1 justify-center items-center main'>
                 <div className='flex flex-col'>
                     <div>
@@ -27,5 +27,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home;
