@@ -1,0 +1,89 @@
+.main{
+  z-index: 0;
+  padding: 50px;
+}
+
+.main h1{
+  font-size: 88px;
+  text-align: center;
+}
+
+.main h2{
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+nav, p, h1, h2, img{
+  user-select: none;
+}
+
+.main-content{
+  width:100%;
+}
+
+nav{
+  z-index: 1;
+}
+
+.header{
+  color: white;
+}
+
+.about{
+  width: 32rem;
+  text-align: justify;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 19px;
+}
+
+.debug{
+  border-width: 1px;
+  border-color: red;
+}
+
+footer p{
+  text-align: center;
+  color:white;
+}
+
+.academic{
+  text-align: center;
+}
+
+.academic-entry{
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-width: 2px;
+  margin: 1em 0;
+  padding: 2em;
+  transition-duration: 0.2s;
+}
+
+.academic-entry:hover{
+  border-color: rgba(0, 0, 0);
+  transition-duration: 0.2s;
+}
+
+.academic-title{
+  margin-bottom: 20px;
+}
+
+.down{
+  width: 32px;
+  height: 32px;
+}
+
+.foot{
+  text-align:center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
