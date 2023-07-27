@@ -1,38 +1,13 @@
-.main{
-  z-index: 0;
-  padding: 50px;
-}
-
-.main h1{
-  font-size: 88px;
-  text-align: center;
-}
-
-.main h2{
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
 nav, p, h1, h2, img{
   user-select: none;
 }
 
+p{
+  font-size: 16px !important;
+}
+
 .main-content{
   width:100%;
-}
-
-nav{
-  z-index: 1;
-}
-
-.header{
-  color: white;
-}
-
-.about{
-  width: 32rem;
-  text-align: justify;
 }
 
 .subtitle{
@@ -69,10 +44,6 @@ footer p{
   transition-duration: 0.2s;
 }
 
-.academic-title{
-  margin-bottom: 20px;
-}
-
 .down{
   width: 32px;
   height: 32px;
@@ -86,20 +57,6 @@ footer p{
   width: 100%;
   background-color: rgb(0, 0, 0);
   color: white;
-}
-
-.rectangle{
-  display: inline-block;
-  width: auto;
-  height: 25px;
-  background: black;
-  border-radius: 20px;
-}
-
-.inner-rectangle{
-  height: 25px;
-  background: green;
-  border-radius: 20px;
 }
 
 .language-logo{

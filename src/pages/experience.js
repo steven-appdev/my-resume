@@ -1,4 +1,5 @@
 import ExperienceBar from '../components/experiencebar';
+import Title from '../components/title';
 
 const codeExp = [
     {logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", language: "HTML5", experience: "80%"},
@@ -19,10 +20,10 @@ const codeExp = [
 
 export default function experience(){
     return(
-        <div className="flex flex-col h-screen pt-10">
+        <div className="flex flex-col pt-10">
             <div className='flex flex-1 justify-center main'>
                 <div className='flex flex-col academic'>
-                    <h1 className="animate__animated animate__fadeIn academic-title pb-20">here are my Experiences.</h1>
+                    <Title title='here are my Experiences.'/>
                     <div className='grid grid-cols-5 gap-10'>
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
                         {codeExp.map((item) => (

@@ -1,3 +1,5 @@
+import './experiencebar.css'
+
 export default function ExperienceBar(props){
     return(
         <div className='rectangle relative'>
