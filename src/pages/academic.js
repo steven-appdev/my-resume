@@ -1,3 +1,4 @@
+import AcademicHistory from '../components/academichistory';
 import Title from '../components/title';
 
 const history = [
@@ -8,20 +9,12 @@ const history = [
 
 export default function Academic(){
     return(
-        <div className='flex flex-col h-screen pt-10'>
-            <div className='flex flex-1 justify-center main'>
-                <div className='flex flex-col academic'>
-                    <Title title='here are my Academic History.'/>
-                    {history.map((item) => (
-                        <div className='animate__animated animate__flipInX academic-entry'>
-                            <h2 className='text-[25px] font-bold pb-2'>{item.title}</h2>
-                            <p>{item.university}</p>
-                            <p>{item.country}</p>
-                            <p>{item.year}</p>
-                            <p>{item.award}</p>
-                        </div>
-                    ))}
-                </div>
+        <div className='flex flex-col grow items-center pt-10'>
+            <Title title='here are my Academic History.'/>
+            <div className='w-full lg:w-[70%]'>
+                {history.map((item) => (
+                    <AcademicHistory content={item}/>
+                ))}
             </div>
         </div>
     );
