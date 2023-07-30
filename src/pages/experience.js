@@ -20,20 +20,16 @@ const codeExp = [
 
 export default function experience(){
     return(
-        <div className="flex flex-col pt-10">
-            <div className='flex flex-1 justify-center main'>
-                <div className='flex flex-col academic'>
-                    <Title title='here are my Experiences.'/>
-                    <div className='grid grid-cols-5 gap-10'>
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
-                        {codeExp.map((item) => (
-                            <div className='flex flex-col animate__animated animate__flipInX'>
-                                <img className="language-logo mx-auto mb-5" src={item.logo} alt={item.language}/>
-                                <ExperienceBar experience={item.experience}/>
-                            </div>
-                        ))}
+        <div className='flex flex-col grow items-center pt-10'>
+            <Title title='here are my Experiences.'/>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 w-[275px] md:w-[600px] lg:w-[950px]'>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
+                {codeExp.map((item) => (
+                    <div className='flex flex-col animate__animated animate__flipInX'>
+                        <img className="language-logo mx-auto mb-5 hover:-translate-y-1 hover:scale-110 duration-300" src={item.logo} alt={item.language}/>
+                        <ExperienceBar experience={item.experience}/>
                     </div>
-                </div>
+                ))}
             </div>
         </div>
     )

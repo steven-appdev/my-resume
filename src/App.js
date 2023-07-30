@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Academic from './pages/academic';
 import Experience from './pages/experience';
 import Navbar from './components/navbar';
+import Project from './pages/project';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path='/' element={<Home/>}/>
             <Route path='academic' element={<Academic/>}/>
             <Route path='experiences' element={<Experience/>}/>
+            <Route path='projects' element={<Project/>}/>
           </Routes>
         </main>
     </BrowserRouter>
