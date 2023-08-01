@@ -1,16 +1,16 @@
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { NavLink } from 'react-router-dom'
+import { Disclosure } from "@headlessui/react"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import { NavLink } from "react-router-dom"
 
 const navigation = [
-    { name: 'Home', href: '/'},
-    { name: 'Academic History', href: 'academic'},
-    { name: 'Experiences', href: 'experiences'},
-    { name: 'Past Projects', href: 'projects'},
+    { name: "Home", href: "/"},
+    { name: "Academic History", href: "academic"},
+    { name: "Experiences", href: "experiences"},
+    { name: "Past Projects", href: "projects"},
 ]
   
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(" ")
 }
 
 export default function Navbar(){
@@ -35,7 +35,7 @@ export default function Navbar(){
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div className="flex flex-shrink-0 items-center">
-                        <h1 className="text-white font-bold">Steven's Resume</h1>
+                        <h1 className="text-white font-bold">Steven"s Resume</h1>
                     </div>
                 </div>
 
@@ -47,8 +47,8 @@ export default function Navbar(){
                                 key={item.name}
                                 to={item.href}
                                 className={classNames(
-                                'text-gray-400 hover:text-white duration-200',
-                                'rounded-md px-3 py-2 text-sm font-medium'
+                                "text-gray-400 hover:text-white duration-200",
+                                "rounded-md px-3 py-2 text-sm font-medium"
                                 )}
                                 activeClassName="active"
                             >
@@ -69,8 +69,8 @@ export default function Navbar(){
                     as="a"
                     href={item.href}
                     className={classNames(
-                        'text-gray-300 hover:text-white',
-                        'block rounded-md px-3 py-2 text-base font-medium'
+                        "text-gray-300 hover:text-white",
+                        "block rounded-md px-3 py-2 text-base font-medium"
                     )}
                     >
                     {item.name}

@@ -1,15 +1,15 @@
-import portrait from '../img/cvPhoto.png';
-import Title from '../components/title';
+import portrait from "../img/cvPhoto.png";
+import Title from "../components/title";
 
 export default function Home() {
     return (
-        <div className='animate__animated animate__fadeIn flex flex-col grow items-center pt-10'>
-            <Title title='my name is Steven.'/>
-            <div className='flex flex-col xl:flex-row'>
-                <div className='py-10 px-5'>
-                    <img src={portrait} alt='This is my face' className='w-60 m-auto'></img>
+        <div className="animate__animated animate__fadeIn flex flex-col grow items-center pt-10">
+            <Title title="my name is Steven."/>
+            <div className="flex flex-col xl:flex-row">
+                <div className="py-10 px-5">
+                    <img src={portrait} alt="This is my face" className="w-60 m-auto"></img>
                 </div>
-                <div className='shrink p-5 lg:p-10 w-full lg:w-[32rem] text-justify'>
+                <div className="shrink p-5 lg:p-10 w-full lg:w-[32rem] text-justify">
                     <p>
                         My name is Tan Teck Xun. But you can call me Steven. I am a fresh graduate from Northumbria University who is currently looking for opportunities and are not afraid of taking any new challenges.
                         I have been learning various programming skills for the past 6 years and I always love to challenge myself to develop different project, ranging from web to games development, take this website as a robust example!

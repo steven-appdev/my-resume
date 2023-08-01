@@ -1,5 +1,5 @@
-import ExperienceBar from '../components/experiencebar';
-import Title from '../components/title';
+import ExperienceBar from "../components/experiencebar";
+import Title from "../components/title";
 
 const codeExp = [
     {logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", language: "HTML5", experience: "80%"},
@@ -20,12 +20,12 @@ const codeExp = [
 
 export default function experience(){
     return(
-        <div className='flex flex-col grow items-center pt-10'>
-            <Title title='here are my Experiences.'/>
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 w-[275px] md:w-[600px] lg:w-[950px]'>
+        <div className="flex flex-col grow items-center pt-10">
+            <Title title="here are my Experiences."/>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 w-[275px] md:w-[600px] lg:w-[950px]">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
                 {codeExp.map((item) => (
-                    <div className='flex flex-col animate__animated animate__flipInX'>
+                    <div className="flex flex-col animate__animated animate__flipInX">
                         <img className="language-logo mx-auto mb-5 hover:-translate-y-1 hover:scale-110 duration-300" src={item.logo} alt={item.language}/>
                         <ExperienceBar experience={item.experience}/>
                     </div>

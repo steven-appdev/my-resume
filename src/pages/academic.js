@@ -1,5 +1,5 @@
-import AcademicHistory from '../components/academichistory';
-import Title from '../components/title';
+import AcademicHistory from "../components/academichistory";
+import Title from "../components/title";
 
 const history = [
     { title: "Diploma in Computer Studies", university: "UOW Malaysia KDU", country: "Malaysia", year: "2017-2019", award: "Graduated with Distinction"},
@@ -9,9 +9,9 @@ const history = [
 
 export default function Academic(){
     return(
-        <div className='flex flex-col grow items-center pt-10'>
-            <Title title='here are my Academic History.'/>
-            <div className='w-full lg:w-[90%]'>
+        <div className="flex flex-col grow items-center pt-10">
+            <Title title="here are my Academic History."/>
+            <div className="w-full lg:w-[90%]">
                 {history.map((item) => (
                     <AcademicHistory content={item}/>
                 ))}
