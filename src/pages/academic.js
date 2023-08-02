@@ -11,7 +11,7 @@ export default function Academic(){
     return(
         <div className="flex flex-col grow items-center pt-10">
             <Title title="here are my Academic History."/>
-            <div className="w-full lg:w-[90%]">
+            <div className="w-full lg:w-[1250px]">
                 {history.map((item) => (
                     <AcademicHistory content={item}/>
                 ))}

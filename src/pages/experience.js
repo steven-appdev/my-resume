@@ -23,7 +23,6 @@ export default function experience(){
         <div className="flex flex-col grow items-center pt-10">
             <Title title="here are my Experiences."/>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 w-[275px] md:w-[600px] lg:w-[950px]">
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
                 {codeExp.map((item) => (
                     <div className="flex flex-col animate__animated animate__flipInX">
                         <img className="language-logo mx-auto mb-5 hover:-translate-y-1 hover:scale-110 duration-300" src={item.logo} alt={item.language}/>
@@ -31,6 +30,7 @@ export default function experience(){
                     </div>
                 ))}
             </div>
+            <h2 className="text-5xl font-light mt-20 text-center">and countless to come in the future...</h2>
         </div>
     )
 }

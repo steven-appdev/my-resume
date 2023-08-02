@@ -1,26 +1,40 @@
-//Each Past Project components should consists of Title, Description, Language and GitHub link (if applicable)
-
-import GitHubButton from "./github-button"
+import CustomButton from "./custom-buttons"
 
 function Link(props){
     if(props.link !== null){
         return(
-            <a href={props.link} className="mx-auto">
-                <GitHubButton/>
+            <a href={props.link}>
+                <CustomButton type="git"/>
             </a>
         )
     }
-    return(<p className="italic font-light px-10 py-2 mt-7">No repository available.</p>)
+}
+
+function Video(props){
+    if(props.link !== null){
+        return(
+            <a href={props.link}>
+                <CustomButton type="youtube"/>
+            </a>
+        )
+    }
 }
 
 export default function PastProject(props){
     return(
-        <div className="animate__animated animate__flipInX flex flex-col p-10 border-[2px] border-grey-200 hover:border-black duration-300 rounded-lg text-center">
+        <div className="animate__animated animate__bounceIn flex flex-col relative p-10 border-[2px] border-grey-200 hover:border-black duration-300 rounded-lg text-center">
             <h2 className="text-[25px] font-bold pb-2">{props.content.title}</h2>
             <p>{props.content.type}</p>
-            <p>{props.content.description}</p>
-            <p>{props.content.language}</p>
-            <Link link={props.content.link}/>
+            <p className="font-light mx-auto my-5 w-full sm:w-[80%] h-auto">{props.content.description}</p>
+            <div className="flex flex-wrap h-auto p-1 w-full sm:w-[80%] mx-auto justify-center m-5">
+                {props.content.language.map((item) => (
+                    <p className="rounded-full bg-gray-600 hover:bg-gray-500 duration-300 text-white w-fit px-5 py-1 m-1"><i class="fa fa-tag" aria-hidden="true"></i> {item}</p>
+                ))}
+            </div>
+            <div className="my-1 w-full sm:w-[80%] mx-auto">
+                <Link link={props.content.link}/>
+                <Video link={props.content.video}/>
+            </div>
         </div>
     )
 }

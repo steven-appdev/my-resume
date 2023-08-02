@@ -19,6 +19,9 @@ function App() {
             <Route path="projects" element={<Project/>}/>
           </Routes>
         </main>
+        <footer className="bg-gray-800 mt-20">
+          <p className="py-2 mx-10 font-light">This website is developed and belong to Tan Teck Xun. All rights reserved © 2023.</p>
+        </footer>
     </BrowserRouter>
   );
 }

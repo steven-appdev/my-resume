@@ -35,7 +35,7 @@ export default function Navbar(){
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div className="flex flex-shrink-0 items-center">
-                        <h1 className="text-white font-bold">Steven"s Resume</h1>
+                        <h1 className="text-white font-bold">Steven's Resume</h1>
                     </div>
                 </div>
 
