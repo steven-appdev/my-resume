@@ -28,6 +28,13 @@ function ButtonText(props){
                 </p>
             )
 
+        case "download":
+            return(
+                <p className="px-2 my-auto">
+                    <i className="fa fa-download my-auto pr-2" style={{fontSize: "20px"}}></i>Report
+                </p>
+            )
+
         default:
             return null;
     }
