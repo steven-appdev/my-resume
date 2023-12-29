@@ -35,6 +35,13 @@ function ButtonText(props){
                 </p>
             )
 
+        case "itch":
+            return(
+                <p className="px-2 my-auto">
+                    <i className="fa fa-gamepad my-auto pr-2" style={{fontSize: "20px"}}></i>Itch.io
+                </p>
+            )
+
         default:
             return null;
     }

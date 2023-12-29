@@ -1,9 +1,9 @@
 import CustomButton from "./custom-buttons"
 
-function Link(props){
-    if(props.link !== null){
+function Git(props){
+    if(props.link !== undefined){
         return(
-            <a href={props.link}>
+            <a href={props.link} target="_blank" rel="noreferrer">
                 <CustomButton type="git"/>
             </a>
         )
@@ -11,9 +11,9 @@ function Link(props){
 }
 
 function Video(props){
-    if(props.link !== null){
+    if(props.link !== undefined){
         return(
-            <a href={props.link}>
+            <a href={props.link} target="_blank" rel="noreferrer">
                 <CustomButton type="youtube"/>
             </a>
         )
@@ -21,10 +21,20 @@ function Video(props){
 }
 
 function Download(props){
-    if(props.link !== null){
+    if(props.link !== undefined){
         return(
             <a href={props.link} download>
                 <CustomButton type="download"/>
+            </a>
+        )
+    }
+}
+
+function Itch(props){
+    if(props.link !== undefined){
+        return(
+            <a href={props.link} target="_blank" rel="noreferrer">
+                <CustomButton type="itch"/>
             </a>
         )
     }
@@ -37,14 +47,15 @@ export default function PastProject(props){
             <p>{props.content.type}</p>
             <p className="font-light mx-auto my-5 w-full sm:w-[80%] h-auto">{props.content.description}</p>
             <div className="flex flex-wrap h-auto p-1 w-full sm:w-[80%] mx-auto justify-center m-5">
-                {props.content.language.map((item) => (
+                {props.content.tags.map((item) => (
                     <p className="rounded-full bg-gray-600 hover:bg-gray-500 duration-300 text-white w-fit px-5 py-1 m-1"><i class="fa fa-tag" aria-hidden="true"></i> {item}</p>
                 ))}
             </div>
             <div className="my-1 w-full sm:w-[80%] mx-auto">
-                <Link link={props.content.link}/>
+                <Git link={props.content.git}/>
                 <Video link={props.content.video}/>
                 <Download link={props.content.download}/>
+                <Itch link={props.content.itch}/>
             </div>
         </div>
     )
