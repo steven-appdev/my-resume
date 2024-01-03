@@ -29,10 +29,17 @@ const pastproj = [
         title: "Starducks Coffee",
         type:"Self Improvement",
         description:"Starduck Coffee is a game made using Godot for Coffee Jam 2023 under 14 days. You play as Mocha, who is a new employee at Starduck Coffee. Your job is to serve as many customers as possible without making them run out of patience or making any rookie mistakes.",
-        tags: ["Godot","C#", "Aseprite", "Game Jam", "Placed #17"],
+        tags: ["Godot", "C#", "Aseprite", "Game Jam", "Placed #17"],
         git: "https://github.com/steven-appdev/starduck-coffee",
         video: "https://www.youtube.com/watch?v=82xSyFJp0fw",
         itch: "https://stevenplus.itch.io/starducks-coffee"
+    },
+    {
+        title: "Epic Free Bot",
+        type:"Self Improvement",
+        description:"A custom automated Discord bot that retrieves free game on Epic Store daily and posting it on Discord server as an embedded message .",
+        tags: ["Javascript", "Discord Bot", "Automation", "Embedded Message"],
+        git: "https://github.com/steven-appdev/epic-free-bot"
     }
 ]
 
