@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.44e31932.css",
-    "main.js": "/my-resume/static/js/main.7a4ecd26.js",
+    "main.js": "/my-resume/static/js/main.5f952564.js",
     "static/js/787.7c4fc8d6.chunk.js": "/my-resume/static/js/787.7c4fc8d6.chunk.js",
     "static/media/spcs-dissertation.pdf": "/my-resume/static/media/spcs-dissertation.df94a62ec060abce660e.pdf",
+    "static/media/nss-dissertation.pdf": "/my-resume/static/media/nss-dissertation.8f3c450564ba3a61002f.pdf",
     "static/media/cvPhoto.png": "/my-resume/static/media/cvPhoto.3495d7fc16877a91423e.png",
     "index.html": "/my-resume/index.html",
     "main.44e31932.css.map": "/my-resume/static/css/main.44e31932.css.map",
-    "main.7a4ecd26.js.map": "/my-resume/static/js/main.7a4ecd26.js.map",
+    "main.5f952564.js.map": "/my-resume/static/js/main.5f952564.js.map",
     "787.7c4fc8d6.chunk.js.map": "/my-resume/static/js/787.7c4fc8d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44e31932.css",
-    "static/js/main.7a4ecd26.js"
+    "static/js/main.5f952564.js"
   ]
 }
