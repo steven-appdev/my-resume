@@ -1,6 +1,7 @@
 import PastProject from "../components/pastproject";
 import Title from "../components/title";
 import Dissertation from "../files/spcs-dissertation.pdf";
+import MSCDissertation from "../files/nss-dissertation.pdf";
 
 const pastproj = [
     {
@@ -19,9 +20,9 @@ const pastproj = [
     },
     {
         title: "Smart Plant Caring System using IoT", 
-        type:"Bachelor Degree Project", 
+        type:"Bachelor's Degree Final Year Project", 
         description:"A smart device that adopted the IoT technology with the combination of sensor to automate the process of taking cares of a plant. The project also features a website that visualise all the collected data. If you wish to learn more about the project, feel free to download my dissertation that has been written and submitted in partial fulfilment of the regulations governing the award of the Degree of BSc. (Honours) Computer Science.", 
-        tags: ["PHP", "IoT", "Docker", "MSSQL", "MQTT", "Telegraf", "InfluxDB", "Bootstrap"],
+        tags: ["PHP", "IoT", "Docker", "MSSQL", "MQTT", "Telegraf", "InfluxDB", "Bootstrap", "JavaScript"],
         video: "https://youtu.be/r4GNv0IWV4M",
         download: Dissertation
     },
@@ -38,8 +39,23 @@ const pastproj = [
         title: "Epic Free Bot",
         type:"Self Improvement",
         description:"A custom automated Discord bot that retrieves free game on Epic Store daily and posting it on Discord server as an embedded message .",
-        tags: ["Javascript", "Discord Bot", "Automation", "Embedded Message"],
+        tags: ["JavaScript", "Discord Bot", "Automation", "Embedded Message"],
         git: "https://github.com/steven-appdev/epic-free-bot"
+    },
+    {
+        title: "Interactive Visualisation for National Student Survey data",
+        type:"Master's Degree Final Year Project",
+        description:"An interactive dashboard has been developed to visualises the National Student Survey (NSS) data (e.g., Positivity Scores, Response Rate). The NSS is an annual survey published to assist higher education institutions in evaluating teaching performance and student satisfaction.",
+        tags: ["TypeScript", "React", "Tailwind", "MySQL", "PHP"],
+        git: "https://github.com/steven-appdev/nss-dashboard",
+        download: MSCDissertation
+    },
+    {
+        title: "National Student Survey (NSS) Data Integration System using ETL Approach",
+        type:"Master's Degree Final Year Project",
+        description:"Researched and developed as part of the master’s degree project by conceptualising a solution for integrating future NSS data into the existing database. The integration system hosted on a Microsoft Azure cloud Docker environment was developed using an ETL approach designed to allow big CSV data to be Extracted and Transformed before Loaded into the database.",
+        tags: ["Python", "Apache Spark", "ETL Approach", "Microsoft Azure", "Docker", "Big Data"],
+        git: "https://github.com/steven-appdev/nss-integration-api"
     }
 ]
 
