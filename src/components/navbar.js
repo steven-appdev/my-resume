@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom"
 
 const navigation = [
     { name: "Home", href: "/"},
-    { name: "Academic History", href: "academic"},
-    { name: "Experiences", href: "experiences"},
-    { name: "Past Projects", href: "projects"},
+    { name: "Academic History", href: "/academic"},
+    { name: "Technical Skills", href: "/technical"},
+    { name: "Past Projects", href: "/projects"},
 ]
   
 function classNames(...classes) {

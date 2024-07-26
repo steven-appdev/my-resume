@@ -17,7 +17,7 @@ export default function Home() {
                             I have been learning various programming skills for the past 6 years and I always love to challenge myself to develop different project, ranging from web to games development, take this website as a robust example!
                             I would consider myself as a fast learner who can constantly and rapidly adapt new skill and turn it into solution.
                             I personally believed that there is never an end when it comes to learning new skills, and everyone will definitely learn something new everyday.
-                            In conclusion, I am very excited and I am commited that I would be contributing 100% of my skills, knowledge and passion towards any opportunities given to me in the future.
+                            I am very excited and I am commited that I would be contributing 100% of my skills, knowledge and passion towards any opportunities given to me in the future.
                         </p>
                     </div>
                 </div>
