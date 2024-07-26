@@ -21,7 +21,7 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <div className="mt-20 w-[92%] mx-auto">
+                <div className="mt-10 w-[95%] mx-auto">
                     <a href="mailto: steventan@outlook.my">
                         <CustomButton type="email"/>
                     </a>

@@ -63,7 +63,7 @@ export default function Project(){
     return(
         <div className="flex flex-col grow items-center pt-10">
             <Title title="here are my Projects."/>
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-10 w-full lg:w-[1250px]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 w-full lg:w-[1250px]">
                 {pastproj.map((item) => (
                     <PastProject content={item}/>
                 ))}
